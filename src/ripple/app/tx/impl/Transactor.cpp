@@ -941,7 +941,7 @@ executeHookChain(
         >> hookParamOverrides {};
 
     auto const& hooks = hookSLE->getFieldArray(sfHooks);
-    int hook_no = 0;
+    uint8_t hook_no = 0;
 
     for (auto const& hook : hooks)
     {
@@ -1105,7 +1105,7 @@ Transactor::doHookCallback(std::shared_ptr<STObject const> const& provisionalMet
 
     bool found = false;
     auto const& hooks = hooksCallback->getFieldArray(sfHooks);
-    int hook_no = 0;
+    uint8_t hook_no = 0;
     for (auto const& hook : hooks)
     {
         hook_no++;
@@ -1377,7 +1377,7 @@ Transactor::doAaw(
     }
 
     auto const& hooks = hooksArray->getFieldArray(sfHooks);
-    int hook_no = 0;
+    uint8_t hook_no = 0;
     for (auto const& hook : hooks)
     {
         hook_no++;
