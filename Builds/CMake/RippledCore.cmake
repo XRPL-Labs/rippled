@@ -139,7 +139,8 @@ target_link_libraries (xrpl_core
     NIH::secp256k1
     NIH::ed25519-donna
     date::date
-    Ripple::opts)
+    Ripple::opts
+    gmp)
 #[=================================[
    main/core headers installation
 #]=================================]
